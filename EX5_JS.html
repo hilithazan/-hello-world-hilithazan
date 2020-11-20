@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title> JS page</title>
+        <script>
+            function function2 () {
+                document.getElementById("P3").innerHTML="Your comment has been recived"
+            }
+        </script>
+    </head>
+    <body>
+        <h1>This is JS page</h1>
+        <p id="P1"></p> 
+        <script>
+            document.getElementById('P1').innerHTML= "hello JavaScript without function";
+        </script>
+        <br><br>
+        <p id="P2"></p>
+        <script>
+            function MyFunction1 (a,b){
+                return a*b;
+               }
+            document.getElementById("P2").innerHTML= MyFunction1(2,3);
+            
+        </script>
+        <br><br><br><br>
+        <p id="P3">Send your comment!!!!</p>
+        <button type="button" onclick="function2()">Send!</button> 
+            <br><br><br><br>
+        <button onclick="this.innerHTML= Date()" >What is the Date?</button>
+      
+      
+        <br><br><br><br><br><br>
+        <button onclick="document.getElementById('buterfly').src='cloes.jfif'">Fly away!!</button>
+        <img id="buterfly" src="open.jfif" alt= "Bug Image" width="200px">
+        <button onclick="comeBack()">Come Back!!</button>
+        <script>
+            function comeBack(){
+                document.getElementById('buterfly').src="open.jfif";
+            }
+        </script>
+    </body>
+</html>
