@@ -1,0 +1,53 @@
+body {
+    background-image: url("Background2.jpg") ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.Ball{
+    height: 250px;
+    width: 500px;
+    background-color:pink ;
+    border-radius: 100%;
+    animation: 
+    pulse 10s ease infinite alternate,
+    nudge 5s linear infinite;
+}
+
+.Enter{
+text-align: center;
+}
+
+h1, h4,h3{
+    text-align: center;
+    font-family:Kalam ;
+}
+
+@font-face{
+    Font-family: Kalam;
+    Src: url(KalamRegular.ttf);
+    }
+
+@keyframes pulse{
+    0%, 100%{
+        background-color:pink;
+    }
+    50%{
+        background-color: rgb(190, 45, 113); 
+    }
+    80%{
+        background-color: rgb(233, 12, 115); 
+    }
+}
+@keyframes nudge{
+    0%, 100%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,300px); 
+    } 
+    80%{
+        transform: translate(0,-100px);
+    }
+}
