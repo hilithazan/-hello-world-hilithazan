@@ -1,0 +1,9 @@
+<header>
+    <h1>{{ page_name }}</h1>
+    {% set info ='The info' %}
+    {% if session.get('logged_in') %}
+        <h2>user logged-in: {{ session.get('username') }}!</h2>
+    {% else %}
+    <h2>user logged-in: Stranger</h2>
+    {% endif %}
+</header>
