@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert users</title>
+</head>
+<body>
+    <h1>create a new user</h1>
+    <h4>The method is: {{ req_method }}</h4>
+    <form action="/insert-users_class11" method="POST">
+        <label for="name">Name: </label>
+        <br>
+        <input name="name" id="name">
+        <br>
+        <label for="email">Email: </label>
+        <br>
+        <input name="email" type="email" id="email">
+        <br>
+        <label for="pass">Password: </label>
+        <br>
+        <input name="password" type="password" id="pass">
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

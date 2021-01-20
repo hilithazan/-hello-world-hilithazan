@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>users_class11</title>
+</head>
+<body>
+    <h1>all the users:</h1>
+    <ul>
+        {% if users %}
+        {% for user in users %}
+        <li>
+            {{ user.id }} <b>{{ user.name }}</b> ({{ user.email }})
+        </li>
+        {% endfor %}
+    {% endif %}
+
+    </ul>
+            <a href="/insert-users_class11">Insert user</a>
+    <h2>Delete user:</h2>
+    <form action="delete_user" method="GET">
+        User ID:<label><input name="id" type="text"></label>
+        <input type="submit">
+    </form>
+</body>
+</html>

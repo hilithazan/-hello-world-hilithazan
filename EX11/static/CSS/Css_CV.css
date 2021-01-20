@@ -1,0 +1,145 @@
+body {
+background: url("Background2.jpg") ;
+text-align: center;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.header{
+grid-area: header;
+font-family: Kalam;
+border-style: solid;
+border-color: rgba(2, 2, 2, 0.699);
+}
+
+.main{
+    grid-area: main; background-color:rgb(169, 169, 169,0.5);
+    font-family:Raleway ;  border-style: solid;
+    border-color: rgba(2, 2, 2, 0.699);
+ }
+
+.image{
+    grid-area: image;
+    padding: 10px;
+    background-color:white;
+    border-style: solid;
+    border-color: rgba(64, 64, 65, 0.699);
+    font-family:Raleway ;
+
+ }
+ .Left-side{
+    grid-area: Left-side; background-color:rgb(169, 169, 169,0.5);
+    font-family:Raleway ;  border-style: solid;
+    border-color: rgba(2, 2, 2, 0.699);
+ }
+ .Right-side{
+    grid-area: Right-side; background-color:rgb(169, 169, 169,0.5);
+    font-family:Raleway ;  border-style: solid;
+    border-color: rgba(2, 2, 2, 0.699);
+ }
+ .footer{
+    grid-area: footer; background-color:rgb(169, 169, 169,0.5);
+    background-color:rgb(169, 169, 169,0.5);
+    font-family:Raleway ;  border-style: solid;
+    border-color: rgba(2, 2, 2, 0.699);
+ }
+
+ .menu{
+    grid-area: menu;
+    font-family:Raleway ;
+    display:flex; justify-content: space-between;
+    border-style: solid;
+    border-color: rgba(2, 2, 2, 0.699);
+ }
+ .menuList{
+    font-size: 10hv;
+    font-weight:bold ;
+    text-decoration: none;
+    color: black;
+
+ }
+ .Left-side2{
+    grid-area: Left-side2; background-color:rgb(169, 169, 169,0.5);
+    font-family:Raleway ;  border-style: solid;
+    border-color: rgba(2, 2, 2, 0.699);
+ }
+ .Right-side2{
+    grid-area: Right-side2; background-color:rgb(169, 169, 169,0.5);
+    font-family:Raleway ;  border-style: solid;
+    border-color: rgba(2, 2, 2, 0.699);
+ }
+ .center{
+    grid-area: center; background-color:rgb(169, 169, 169,0.5);
+    font-family:Raleway ;  border-style: solid;
+    border-color: rgba(2, 2, 2, 0.699);;
+ }
+ .contact_me{
+
+    text-align: center;
+    height: 600px;
+    width: 600px;
+    background-color:rgb(169, 169, 169,0.5);
+    font-family:Raleway ;
+    border-style: solid;
+    border-color: rgba(2, 2, 2, 0.699);
+    border-radius: 100%;
+    justify-content: center;
+    position: absolute;
+     }
+ .back{
+    font-size: 1.5hv;
+    color: black;
+ }
+ .otherPage{
+    font-size: 2.5hv;
+    color: black;
+    text-decoration: none;
+ }
+
+ .socialMedia:hover, .socialMedia:focus{
+    width: 80px;
+ }
+
+ .menuList:hover, .menuList:focus, .otherPage:hover , .otherPage:focus, .back:hover, .back:focus{
+    font-size: 2.5vh;
+ }
+ .header:hover{background-color:white; border-style: solid; border-color: rgba(215, 192, 216, 0.699); }
+ .main:hover{background-color: rgba(177, 59, 108, 0.664); border-radius: 15%; border-style: solid; border-color: rgba(215, 192, 216, 0.699); }
+ .image:hover{background-color: rgba(177, 59, 108, 0.664); border-radius: 15%; border-style: solid; border-color: rgba(215, 192, 216, 0.699); }
+ .Left-side:hover{background-color: rgba(177, 59, 108, 0.664); border-radius: 15%; border-style: solid; border-color: rgba(215, 192, 216, 0.699); }
+ .Right-side:hover{background-color: rgba(177, 59, 108, 0.664); border-radius: 15%; border-style: solid; border-color: rgba(215, 192, 216, 0.699); }
+ .footer:hover{background-color: rgba(177, 59, 108, 0.664); border-radius: 15%; border-style: solid; border-color: rgba(215, 192, 216, 0.699); }
+ .Left-side2:hover{background-color: rgba(177, 59, 108, 0.664); border-radius: 15%; border-style: solid; border-color: rgba(215, 192, 216, 0.699); }
+ .Right-side2:hover{background-color: rgba(177, 59, 108, 0.664); border-radius: 15%; border-style: solid; border-color: rgba(215, 192, 216, 0.699); }
+ .center:hover{background-color: rgba(177, 59, 108, 0.664); border-radius: 15%; border-style: solid; border-color: rgba(215, 192, 216, 0.699); }
+
+.grid-container{
+display: grid;
+grid-template-areas:
+'header header header header'
+'menu menu menu menu'
+'main main main image'
+'main main main image'
+'Right-side Right-side Left-side Left-side'
+'Right-side2 center center Left-side2'
+'footer footer footer footer'
+
+;
+grid-template-rows: 50px 50px 50px 25px 25px 25p;
+grid-gap: 60px;
+padding: 60px;
+
+}
+
+
+
+@font-face{
+Font-family: Kalam;
+Src: url(KalamRegular.ttf);
+}
+
+@font-face{
+ Font-family:Raleway;
+ Src: url(Raleway-VariableFont_wght.ttf);
+ }

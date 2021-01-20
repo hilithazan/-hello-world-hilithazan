@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class 10</title>
+</head>
+<body>
+    <h1>The form example page</h1>
+    <h2>The method of this request is: {{ request_method }}</h2>
+
+
+    POST form:
+    <form action="/class10" method="POST">
+        <input name="username">
+        <input name="password">
+        <input type="submit">
+    </form>
+    {% if username %}
+        <h4>Your username is: {{ username }}</h4>
+    {% else %}
+        <h4>Hello, stranger!</h4>
+    {% endif %}
+
+    <br>
+
+    GET form:
+    <form action="/class10" method="GET">
+        <input name="name">
+        <input name="second_name">
+        <input type="submit">
+    </form>
+
+    {% if second_name %}
+        <h4>Your second_name is: {{ second_name }}</h4>
+    {% else %}
+        <h4>Hello, man!</h4>
+    {% endif %}
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users Page</title>
+</head>
+    <body>
+        <h2> {{ insert_message}} </h2>
+        <h1>List Users in DB:</h1>
+        <ul>
+            {% if users %}
+            {% for user in users %}
+            <li>
+                {{ user.id }} <b>{{ user.name }}</b> ({{ user.email }} )
+            </li>
+            {% endfor %}
+        {% endif %}
+
+        </ul>
+                <a href="/Assignment10">Insert user</a>
+
+        <h2>Delete user:</h2>
+        <h2> {{ delete_message}} </h2>
+        <form action="delete_user" method="GET">
+            User ID:<label><input name="id" type="text"></label>
+            <input type="submit" value="Delete">
+        </form>
+
+        <h2>Update user:</h2>
+        <form action="update_user" method="GET">
+            User Name:<label><input name="name" type="text"></label>
+            User ID:<label><input name="id" type="text"></label>
+            <input type="submit" value="Update">
+        </form>
+    </body>
+</html>
